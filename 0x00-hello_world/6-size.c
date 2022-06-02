@@ -1,6 +1,7 @@
 #include<stdio.h>
 
-/** main - Enry point
+/**
+ * main - Enry point
  * Return: 0
  */
 int main(void)
