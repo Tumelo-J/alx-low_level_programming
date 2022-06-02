@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 /**
- * main - program prints simple string to console
+ * main - program prints simple string to consol
+ * reurn: 0
  */
 int main(void)
 {
