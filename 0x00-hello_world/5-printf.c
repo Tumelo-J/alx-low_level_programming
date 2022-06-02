@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 /**
  * main - Code entry code 
  * Return: 0
