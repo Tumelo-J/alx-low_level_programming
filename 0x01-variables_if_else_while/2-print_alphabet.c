@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-	char a;
+	char al;
 
-	for (al = 'a', al = 'z', al++)
+	for (al = 'a'; al = 'z'; al++)
 		putchar(al);
 	return (0);
 }
