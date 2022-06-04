@@ -8,13 +8,9 @@
 int main(void)
 {
 	int i;
-	int j;
-	char ic = itoa(i);
-	char jc = itoa(j);
-	for (i ='0';i <= '9'; i++;
-			for (j = '0'; j<='9'; j++)
-				if (i != j && "icjc" != "jcic")
-					putchar(ij)
+	for (i = 0; i < 100; i++)
+		putchar((i / 10) + '0')	
+		putchar((i % 10) + '0')	
 	putchar('\n');
 	return (0);
 }
