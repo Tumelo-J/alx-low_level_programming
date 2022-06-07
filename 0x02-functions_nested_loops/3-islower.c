@@ -6,7 +6,7 @@
  */
 int _islower(int c)
 {
-	int ch = "abcdefghijklmnopqrstuvxyz";
+	char ch = "abcdefghijklmnopqrstuvxyz";
 	int num;
 	int i;
 
