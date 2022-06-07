@@ -4,7 +4,6 @@
   * main -Entry point
   * return: 0
  */
-
 int main(void)
 {
 	char str[9] = "_putchar";
@@ -14,6 +13,8 @@ int main(void)
 	{
 		_putchar(str[i]);
 	}
+	
 	_putchar('\n');
+
 	return (0);
 }
