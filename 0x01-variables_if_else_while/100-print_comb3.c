@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Program Entry
@@ -12,10 +13,14 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		if ((sprintf(str,"%d",i))[0] != (sprintf(str,"%d",i))[1])
+		str = sprintf(str, "%d", i)
+
+		if (str[0] != str[1])
 		{
 			putchar((i / 10) + '0');
 			putchar((i % 10) + '0');
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
