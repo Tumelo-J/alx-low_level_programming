@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		str = sprintf(str, "%d", i)
+		char str[3] = sprintf(str, "%d", i);
 
 		if (str[0] != str[1])
 		{
