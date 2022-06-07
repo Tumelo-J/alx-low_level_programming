@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		if (sprintf(str,"%d",i)[0] != sprintf(str,"%d",i)[1])
+		if ((sprintf(str,"%d",i))[0] != (sprintf(str,"%d",i))[1])
 		{
 			putchar((i / 10) + '0');
 			putchar((i % 10) + '0');
