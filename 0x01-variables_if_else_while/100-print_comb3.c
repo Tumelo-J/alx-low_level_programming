@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - Program Entry
@@ -13,7 +14,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		char str[3] = sprintf(str, "%d", i);
+		char str = itoa(i, str, 10);
 
 		if (str[0] != str[1])
 		{
