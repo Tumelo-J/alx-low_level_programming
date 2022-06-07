@@ -8,6 +8,7 @@ int _islower(int c)
 {
 	char ch;
 	int num;
+	int c;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
