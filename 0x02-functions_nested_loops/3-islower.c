@@ -6,15 +6,11 @@
  */
 int _islower(int c)
 {
-	char ch;
 	int num;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		if (ch != c)
-			num = 1;
-		else
-			num = 0;
-	}
+	if (c >= 97 && c <=122)
+		num = 1;
+	else
+		num = 0;
 	return (num);
 }
