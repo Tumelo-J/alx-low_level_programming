@@ -1,20 +1,8 @@
 #include "main.h"
-
-/**
-  * main -Entry point to program
-  * Description: Print the alphabet
-  * Return: Always returns 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 /**
   * print_alphabet -Entry point to program
   * Description: Prints alphabet
-  * Return: 0
+  * Return: Nothing -Null
  */
 void print_alphabet(void)
 {
