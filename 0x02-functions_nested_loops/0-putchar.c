@@ -4,10 +4,8 @@
   * main -Entry point
   * return: 0
  */
-char c = "_putchar";
-
 int main(void)
 {
-	_putchar(c);
+	_putchar(_putchar);
 	return (0);
 }
