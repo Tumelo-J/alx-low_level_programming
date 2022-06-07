@@ -6,13 +6,13 @@
  */
 int _islower(int c)
 {
-	char ch[27] = "abcdefghijklmnopqrstuvxyz";
+	char ch;
 	int num;
 	int i;
 
-	for (i = 0; i <= 25; i++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (c == ch[i])
+		if (ch = c)
 			num = 1;
 		else
 			num = 0;
