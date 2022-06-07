@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-  * print_alphabet -Entry point to program
-  * Description: Prints alphabet
+  * print_alphabet_x10 -User Function
+  * Description: Prints 10 x alphabet
   * Return: Nothing -Null
  */
 void print_alphabet_x10(void)
