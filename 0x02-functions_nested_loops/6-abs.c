@@ -8,5 +8,5 @@ int int_abs(int n)
 {
 	int num = (n < 0) ? -n : n;
 
-	return (num)
+	return (num);
 }
