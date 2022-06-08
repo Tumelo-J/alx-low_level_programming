@@ -2,7 +2,7 @@
 /**
   * _abs-User Function
   * @n: num to be made absolute
-  * Return: absolute n 
+  * Return: absolute n
  */
 int _abs(int n)
 {
