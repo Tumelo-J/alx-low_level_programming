@@ -17,10 +17,12 @@ int print_sign(int n)
 	{
 		num = 0;
 		_putchar('0');
+	}
 	else if (n > 0)
 	{
 		num = 1;
 		_putchar('+');
+	}
 
 	return (num);
 }
