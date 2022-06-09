@@ -2,6 +2,7 @@
 
 /**
   * print_numbers - Function checks for number character
+  * Return: void
 */
 void print_numbers(void)
 {
