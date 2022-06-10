@@ -1,10 +1,10 @@
 #include "main.h"
-
 /**
-  * print_diagonal - Prints diagonal
-  * @n: Number of times the backslash in printed
-  * Return: void
-*/
+ * print_diagonal - Function prototype
+ * Description: Print a diagonal line of n length, if n is greater than 0
+ * @n: the number of times the character \ should be printed
+ * Return: void
+ */
 void print_diagonal(int n)
 {
 	int i, j;
@@ -14,7 +14,9 @@ void print_diagonal(int n)
 		for (i = 0; i < n; i++)
 		{
 			for (j = 0; j < i; j++)
+			{
 			       _putchar(32);
+			}
 			_putchar(92);
 			_putchar('\n');
 		}
