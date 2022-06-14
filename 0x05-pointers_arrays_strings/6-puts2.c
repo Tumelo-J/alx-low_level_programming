@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * _puts2 -Prints a string to stdout
+  * puts2 -Prints a string to stdout
   * @str: Input string
   * Return: void
   */
@@ -9,9 +9,10 @@ void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; (str[i] != '\0') && ((i % 2) == 0); i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(str[i]);
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
