@@ -8,7 +8,8 @@
 int _strlen(char *s)
 {
 	int i;
-
-	for(i = 0; ((*s)[i] != '\0');i++);
+	
+	/* s is the location of the input string in memory => s =&string[0] */
+	for(i = 0; (*s != '\0');i++);
 	return (i);
 }
