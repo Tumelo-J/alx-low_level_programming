@@ -11,5 +11,5 @@ int _strlen(char *s)
 	/* s is the location of the input string in memory => s =&string[0] */
 	while (*s != '\0')
 		length++;
-	return (lenth);
+	return (length);
 }
