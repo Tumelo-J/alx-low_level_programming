@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 
 /**
   * _memset - function fills pointed to by a pointer with a character
@@ -9,7 +9,7 @@
   * Return: Pointer to memory area filled with char
 */
 
-char _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
@@ -17,6 +17,6 @@ char _memset(char *s, char b, unsigned int n)
 	{
 		s[i] = b;
 	}
-	return (*s);
+	return (s);
 }
 
