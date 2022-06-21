@@ -5,7 +5,7 @@
   * @s: String from which occurance of c is checked
   * @c: The character whose occurance in s is checked
   *
-  * Return: Pointer to the first occurance of character c in s or NULL if not found
+  * Return: Pointer to the first occurance of character
 */
 char *_strchr(char *s, char c)
 {
@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
-			return(s + i);
+			return (s + i);
 	}
 	return (0);
 }
