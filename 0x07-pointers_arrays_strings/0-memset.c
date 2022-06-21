@@ -1,3 +1,5 @@
+# include "main.h"
+
 /**
   * _memset - function fills pointed to by a pointer with a character
   * @s: Pointer to memory to be filled with characters
