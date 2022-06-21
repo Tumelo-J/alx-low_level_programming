@@ -3,7 +3,7 @@
 /**
  * _strspn - Function finds segment memory starting at memory address 'accept'
  * @s: Memory segment
- * @accept: Starting memory address 
+ * @accept: Starting memory address
  *
  * Return: Number of bytes
 */
@@ -14,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (i = 0; i != '\0'; i++)
 	{
-		if (s[i] = accept)
+		if (s[i] == accept)
 		{
 			n++;
 		}
