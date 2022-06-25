@@ -9,9 +9,9 @@
 
 int main(int argc, char **argv)/* **argv is the same as *argv[]*/
 {
-	while(--argc)
+	while(argc--)
 	{
-		printf("%s\n", argv[argc]);
+		printf("%s\n", *argv++);
 	}
 	return (0);
 }
