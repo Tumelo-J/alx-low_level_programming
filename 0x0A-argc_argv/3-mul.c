@@ -7,7 +7,7 @@
   * Return: 0
   */
 
-int main(int argc, char **argv)/* **argv is the same as *argv[]*/
+int main(int argc, char const **argv)/* **argv is the same as *argv[]*/
 {
 	if (argc ==  3)
 	{
