@@ -12,7 +12,7 @@ int main(int argc, char **argv)/* **argv is the same as *argv[]*/
 	if (argc ==  3)
 	{
 		printf("%d\n",(*argv + 1)*(argv +2));
-		return (0)
+		return (0);
 	}
 	else
 	{
