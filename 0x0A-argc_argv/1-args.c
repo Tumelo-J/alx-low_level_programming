@@ -8,8 +8,9 @@
   */
 
 int main(int argc, char **argv)
-{
-	printf("%d\n", (argc - 1));
+{	argv[argc] = 'Null';
+	argc--;
+	printf("%d\n", argc);
 	return (0);
 }
 
