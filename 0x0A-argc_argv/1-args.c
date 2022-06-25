@@ -7,7 +7,7 @@
   * Return: 0
   */
 
-int main(int argc, char **argv__atribute__((unused)))/* **argv is the same as *argv[]*/
+int main(int argc)
 {
 	printf("%d\n", argc);
 	return (0);
