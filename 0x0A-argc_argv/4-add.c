@@ -3,32 +3,31 @@
 #include <ctype.h>
 
 /**
-  * main - Main function
-  * @argc: Number of arguments passed in the command line
-  * @argv: Array containing arguments passed.
-  * Return: 0
-  */
-
-int main(int argc, char *argv[])
+ * main - program entry point
+ * Description: Adds positive numbers
+ * @argc: The number of arguments passed to the program
+ * @argv: Array of strings arguments that were passed to the program
+ * Return: 0 if all the arguments are passed are numbers else 1
+ */
+int main(const int argc, char const *argv[])
 {
-	int sum = 0;
+	int i;
+	int x;
+	int y = 0;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		if (argc < 1)
+		for (x = 0; argv[i][x] != '\0'; x++)
 		{
-			printf("0\n");
-			return (0);
-		}
-		while(argc--)
-		{
-			if (!isdigit(*argv++))
+			if (!isdigit(argv[i][x]))
 			{
 				printf("Error\n");
-				return (1)
+				return (1);
 			}
-			sum += (*argv++);
 		}
-		printf("%d\n", sum)
-		return (0)
+		y += atoi(argv[i]);
+	}
+
+	printf("%d\n", y);
+	return (0);
 }
