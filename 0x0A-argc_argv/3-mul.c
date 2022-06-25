@@ -11,7 +11,7 @@ int main(int argc, char const **argv)/* **argv is the same as *argv[]*/
 {
 	if (argc ==  3)
 	{
-		printf("%d\n",(*argv + 1)*(argv +2));
+		printf("%d\n", argv[1] * argv[2]);
 		return (0);
 	}
 	else
