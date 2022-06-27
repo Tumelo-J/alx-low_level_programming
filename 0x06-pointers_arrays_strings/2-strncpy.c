@@ -19,11 +19,6 @@ char *_strncpy(char *dest, char *src, int n)
 			dest[j] = src[j];
 			j++;
 		}
-		else
-		{
-			dest[j] = '\0';
-			return (dest);
-		}
 	}
 	return (dest);
 }
