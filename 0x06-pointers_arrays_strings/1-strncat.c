@@ -3,6 +3,7 @@
   * _strncat - Concatinates two strings
   * @dest: Original string
   * @src: String to be appended to dest
+  * @n: Number of bytes of src to be concatinated with dest
   *
   * Return: New dest
 */
