@@ -20,7 +20,11 @@ char *_strncpy(char *dest, char *src, int n)
 			j++;
 		}
 		else
+		{
+			dest[j] = '\0';
 			return (dest);
+		}
 	}
+	dest[j] = '\0';
 	return (dest);
 }
