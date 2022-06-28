@@ -12,8 +12,11 @@ char *_strdup(char *str)
 {
 	char dupstr;
 	char *p;
+	int i;
 
-	dupstr[(char *) malloc(sizeof(str))] = **str;
+	dupstr = malloc(sizeof(*str));
+	for (i = 0; i <= sizeof(str); i++)
+		dupstr[i] = str[i];
 	if (dupstr == NULL || str == NULL)
 		return (NULL);
 	p = &dupstr;
