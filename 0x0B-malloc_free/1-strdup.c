@@ -10,14 +10,17 @@
 
 char *_strdup(char *str)
 {
-	long unsigned int i = 0;
-	char *strdup = malloc(sizeof(char) * sizeof(str));
+	char *strdup;
+	int i = 0;
 
-	if (strdup == NULL)
-		return (NULL);
 	if (str != NULL)
 	{
-		for (; i < sizeof(str); i++)
+		while(str[i] != '\0')
+			i++;
+		strdup = malloc(sizeof(char) * i);
+		if (strup == NULL)
+			return (NULL);
+		while (i--)
 			strdup[i] = str[i];
 		return (strdup);
 	}
