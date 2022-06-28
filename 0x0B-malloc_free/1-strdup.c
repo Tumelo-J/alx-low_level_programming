@@ -10,16 +10,16 @@
 
 char *_strdup(char *str)
 {
-
-	int size;
-	char strdup[size];
-	char *p;
+	char *strdup;
 
 	if (str != NULL)
 	{
-		size = malloc(sizeof(*str));
-		strdup = *str;
+		strdup = malloc(sizeof(*str));
+		if (strup == NULL)
+		{
+			return (NULL);
+		}
+		strdup = str;
 	}
-	p = &strdup;
-	return (p);
+	return (strdup);
 }
