@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char dupstr;
 	char *p;
 
-	dupstr[malloc(sizeof(str)] = str;
+	dupstr[malloc(sizeof(str))] = str;
 	if (dupstr == NULL || str == NULL)
 		return (NULL);
 	p = &dupstr;
