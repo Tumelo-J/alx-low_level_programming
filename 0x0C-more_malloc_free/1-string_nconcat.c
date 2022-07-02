@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+  * len_ - Function computes length of string. Null byte excluded
+  * @s: Input string
+  *
+  * Return: Length of string
+  */
+
 int len_(*s)
 {
 	unsigned int i;
@@ -9,6 +16,7 @@ int len_(*s)
 		i++;
 	return (i);
 }
+
 /**
   * string_nconcat - Function concatinates two strings
   * @s1: First string
@@ -21,7 +29,8 @@ int len_(*s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int len_s1 = len_(s1);
-	char *p = malloc(len_s1 + len_(s2) + 1);
+	unsigned int len_s2 = len_(s2);
+	char *p = malloc(len_s1 + len_s2 + 1);
 
 	if (p != NULL)
 	{
