@@ -8,7 +8,7 @@
   * Return: Length of string
   */
 
-int len_(*s)
+int len_(char *s)
 {
 	unsigned int i;
 
@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			while (n--)
 			{
-				*P = *s2;
+				*p = *s2;
 				p++;
 				s2++;
 			}
