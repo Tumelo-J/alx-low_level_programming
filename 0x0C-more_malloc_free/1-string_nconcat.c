@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int *p;
+	char *p;
 	unsigned int i, j, k;
 	/* Calculating the length of s1 and s2 */
 	while (s1[i] != '\0')
