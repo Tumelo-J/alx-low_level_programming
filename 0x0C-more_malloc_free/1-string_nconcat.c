@@ -1,6 +1,14 @@
 #include "main.h"
 #include <stdlib.h>
 
+int len_(*s)
+{
+	unsigned int i;
+
+	while (*s != '\0')
+		i++;
+	return (i);
+}
 /**
   * string_nconcat - Function concatinates two strings
   * @s1: First string
@@ -12,30 +20,28 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int i, j, k;
-	/* Calculating the length of s1 and s2 */
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0' && (j < n))
-		j++;
-	k = i + j + 1;
-	p = malloc(k);
+	unsigned int len_s1 = len_(s1);
+	char *p = malloc(len_s1 + len_(s2) + 1);
+
 	if (p != NULL)
 	{
-		p[k] = '\0';
-		k--;
-		while (k > i)
+		for (; *s1 != '\0'; s1++, p++)
+			*p = *s1;
+		if (n >= len_s2)
 		{
-			p[k] = s2[j];
-			k--;
-			j--;
+			for (; *s2 != '\0'; s2++, p++)
+				*p = *s2;
 		}
-		while (k--)
+		else
 		{
-			p[k] = s1[i];
-			i--;
+			while (n--)
+			{
+				*P = *s2;
+				p++;
+				s2++;
+			}
 		}
+		*p = '\0';
 		return (p);
 	}
 	return (NULL);
