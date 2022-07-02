@@ -2,22 +2,6 @@
 #include <stdlib.h>
 
 /**
-  * len_ - Function computes length of string. Null byte excluded
-  * @s: Input string
-  *
-  * Return: Length of string
-  */
-
-int len_(char *s)
-{
-	unsigned int i;
-
-	while (*s != '\0')
-		i++;
-	return (i);
-}
-
-/**
   * string_nconcat - Function concatinates two strings
   * @s1: First string
   * @s2: Second string
@@ -28,15 +12,21 @@ int len_(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len_s1 = len_(s1);
-	unsigned int len_s2 = len_(s2);
-	char *p = malloc(len_s1 + len_s2 + 1);
+	unsigned int i = 0, j = 0;
+	char *p;
+
+	while (*s1 != '\0')
+		i++;
+	while (*s2 != '\0')
+		j++;
+
+	(n > j) ? (p = malloc(i + j + 1)) : (p = malloc(n + j));
 
 	if (p != NULL)
 	{
 		for (; *s1 != '\0'; s1++, p++)
 			*p = *s1;
-		if (n >= len_s2)
+		if (n > j)
 		{
 			for (; *s2 != '\0'; s2++, p++)
 				*p = *s2;
@@ -51,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			}
 		}
 		*p = '\0';
-		return (p);
+
 	}
 	return (NULL);
 }
