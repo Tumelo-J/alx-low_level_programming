@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 /**
   * int_dog - Finction intializes a struct dog
   * @d: Pointer to struct
