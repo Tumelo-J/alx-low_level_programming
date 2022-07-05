@@ -1,5 +1,3 @@
-#include <stdlib.h>
-
 /**
   * struct dog - Struct describes parameters of a dog
   * @name: Name of the dog
