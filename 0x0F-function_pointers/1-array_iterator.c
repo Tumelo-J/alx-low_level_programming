@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "function_pointers.h"
 /**
 * array_iterator - Function runs function on array elements
@@ -9,9 +8,12 @@
 */
 void array_iterator(int *array, unsigned int size, void (*action)(int))
 {
-	while (size--)
+	if (array != NULL || size != NULL)
 	{
-		action(*array);
-		array++;
+		while (size--)
+		{
+			action(*array);
+			array++;
+		}
 	}
 }
