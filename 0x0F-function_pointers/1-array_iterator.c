@@ -16,4 +16,6 @@ void array_iterator(int *array, unsigned int size, void (*action)(int))
 			array++;
 		}
 	}
+	else
+		return
 }
