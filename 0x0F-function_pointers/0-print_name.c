@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 /**
   * print_name - Function prints a name
   * @name: Poiter to name array
@@ -8,7 +9,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || !f)
+	if (!name || !f)
 		return;
 	f(name);
 }
