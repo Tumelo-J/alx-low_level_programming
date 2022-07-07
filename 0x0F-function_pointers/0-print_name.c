@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 /**
   * print_name - Function prints a name
   * @name: Poiter to name array
