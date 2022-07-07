@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdio.h>
 /**
   * print_name - Function prints a name
   * @name: Poiter to name array
