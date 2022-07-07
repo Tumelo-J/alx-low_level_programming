@@ -6,7 +6,7 @@
 * @array: Array containing integers
 * Return: Void
 */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, unsigned int size, void (*action)(int))
 {
 	while (size--)
 	{
