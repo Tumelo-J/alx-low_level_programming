@@ -12,12 +12,13 @@
 
 size_t print_listint(const listint_t *h)
 {
-	listint_t.n = 0;
+	size_t i = 0;
 
-	while (*h != NULL)
+	while(h)
 	{
-		printf(*h);
-		(listint_t.n)++;
+		printf("%d\n", h -> n);
+		h = h -> next;
+		i++;
 	}
-	return (listint_t.n)
+	return (i);
 }
