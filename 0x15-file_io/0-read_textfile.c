@@ -12,8 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t lread, fopened, fread, fwrite;
 	char *fsize;
 
-	/* Alloxating memery to enable reading the contents of the file into a character array */
-	fsize = malloc((letters + 1) * sizeof(char));
+	fsize = malloc((letters) * sizeof(char));
 	if (!filename || !fsize)
 		return (0);
 	fopened = open(filename, O_RDONLY);
