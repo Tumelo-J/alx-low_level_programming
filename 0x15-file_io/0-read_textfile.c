@@ -14,15 +14,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fsize = malloc((letters) * sizeof(char));
 	if (!filename || !fsize)
+	{
+		free(fsize);
 		return (0);
+	}
 	fopened = open(filename, O_RDONLY);
 	if (!fopened)
 		return (0);
 	fread = read(fopened, fsize, letters);
-	if (!fread)
+	if (fread == -1)
 		return (0);
 	fwrite = write(STDOUT_FILENO, fsize, fread);
-	if (!fwrite)
+	if (fwrite == -1)
 		return (0);
 	close(fopened);
 	free(fsize);
