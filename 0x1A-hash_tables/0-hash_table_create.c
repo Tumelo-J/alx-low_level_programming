@@ -14,10 +14,10 @@ T *hash_table_create(unsigned long int size)
     
     /* Initialize the hashtable */
     table->size = size;
-    table->array = malloc(sizeof(N) * size);
+    table->array = calloc(size, sizeof(N *));
 
-    /* Free memory if array or size are NULL) */
-    if (table->array == NULL || table->size == 0)
+    /* Free memory if ) */
+    if (table->array == NULL)
     {
         free(table);
         return (NULL);
