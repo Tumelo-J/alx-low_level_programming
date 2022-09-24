@@ -16,7 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	table = malloc(sizeof(T));
 
 	/* Return NULL if memory allocation was not done */
-	if (!table)
+	if (table == NULL)
 		return (NULL);
 
 	/* Value assignment */
