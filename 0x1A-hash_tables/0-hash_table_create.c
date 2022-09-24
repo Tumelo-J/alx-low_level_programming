@@ -1,4 +1,4 @@
-#include <hash_tables.h>
+#include "hash_tables.h"
 
 #define T hash_table_t /* Hashtable */
 #define N hash_node_t  /* Node */
@@ -29,5 +29,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 		free(table);
 		return (NULL);
 	}
+    return (table);
 }
 
